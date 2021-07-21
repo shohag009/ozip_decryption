@@ -60,4 +60,4 @@ jobs:
          run: |
              echo "If you can't find your zip here, check the above ***UPLOAD*** section."
              cd out
-             curl https://bashupload.com/ -T $FINAL_ZIP_NAME #file will be uploaded to bashupload, so mirror it if you are decrypting for community uses.
+             curl --upload-file ./ $FINAL_ZIP_NAME https://transfer.sh/$FINAL_ZIP_NAME #file will be uploaded to bashupload, so mirror it if you are decrypting for community uses.
